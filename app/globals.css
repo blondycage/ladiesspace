@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #8b1e2d;
+  --color-burgundy-deep: #64101d;
+  --color-blush: #d14f6a;
+  --color-blush-light: #f7c3c6;
+  --color-ivory: #fff7f0;
+  --color-charcoal: #333333;
+  --color-champagne: #d4af37;
+  --font-display: var(--font-cormorant), serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --shadow-soft: 0 18px 50px rgba(89, 9, 20, 0.08);
+}
+
+:root {
+  --colour-burgundy: #8b1e2d;
+  --colour-deep-burgundy: #64101d;
+  --colour-soft-blush: #d14f6a;
+  --colour-light-blush: #f7c3c6;
+  --colour-warm-ivory: #fff7f0;
+  --colour-charcoal: #333333;
+  --colour-champagne: #d4af37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;
+  scroll-behavior: smooth;
+  background: var(--colour-warm-ivory);
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(123, 16, 32, 0.04) 1px, transparent 1px),
+    var(--colour-warm-ivory);
+  background-size: clamp(5rem, 9vw, 8.5rem) 100%;
+  color: var(--colour-charcoal);
+  font-family: var(--font-inter), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--colour-soft-blush);
+  color: var(--colour-deep-burgundy);
+}
+
+a:not([class]) {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-150%);
+  background: var(--colour-deep-burgundy);
+  color: var(--colour-warm-ivory);
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid var(--colour-champagne);
+  outline-offset: 3px;
+}
+
+.container-page {
+  width: min(100% - 2rem, 1240px);
+  margin-inline: auto;
+}
+
+.display-heading {
+  font-family: var(--font-cormorant), serif;
+  color: var(--colour-burgundy);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 0.92;
+}
+
+.section-pad {
+  padding-block: clamp(4rem, 7.6vw, 7.4rem);
+}
+
+.fine-line {
+  background: linear-gradient(90deg, rgba(123, 16, 32, 0.45), rgba(123, 16, 32, 0.08));
+  height: 1px;
+  width: 100%;
+}
+
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 260ms ease;
+}
+
+.link-underline:hover,
+.link-underline:focus-visible {
+  background-size: 100% 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

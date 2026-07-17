@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+  <title id="title">Ladies’ Space social preview</title>
+  <rect width="1200" height="630" fill="#FCF8F2"/>
+  <rect x="64" y="64" width="1072" height="502" fill="#F7E5E6" stroke="#7B1020" stroke-opacity=".18" stroke-width="3"/>
+  <text x="110" y="250" fill="#7B1020" font-family="Georgia, serif" font-size="104" font-weight="700">Ladies’ Space</text>
+  <text x="114" y="340" fill="#292727" font-family="Arial, sans-serif" font-size="34">A space for women to connect, grow and flourish.</text>
+  <circle cx="940" cy="312" r="138" fill="#7B1020"/>
+  <circle cx="1008" cy="246" r="92" fill="#E9A4B1" opacity=".88"/>
+</svg>
