@@ -13,9 +13,9 @@ export function Impact() {
               Impact beyond the event.
             </h2>
             <p className="mt-7 max-w-xl text-lg leading-8 text-ivory/78">
-              Events are one vehicle for impact. Our goal is to build a lasting
-              ecosystem that expands access, strengthens relationships and equips
-              women to create meaningful change.
+              Events are one vehicle for impact. Our goal is to build a sustainable
+              ecosystem that expands access, creates awareness, enhances knowledge,
+              strengthens community and equips women to create meaningful change.
             </p>
             <div className="mt-10 grid gap-3 sm:grid-cols-2">
               {impactAreas.map((area) => (

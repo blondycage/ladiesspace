@@ -51,8 +51,8 @@ export function CommunityCTA() {
               Your next connection could open a new possibility.
             </h2>
             <p className="mt-7 max-w-xl text-lg leading-8 text-ivory/78">
-              Join a growing community of women learning, connecting, sharing and
-              creating impact.
+              Join a growing community of women learning, connecting, and creating
+              impact.
             </p>
           </div>
 

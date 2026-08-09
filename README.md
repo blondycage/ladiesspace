@@ -34,7 +34,7 @@ npm run build
 - `components/layout/` contains the announcement bar, sticky header, mobile menu and footer.
 - `components/sections/` contains the landing page sections.
 - `components/ui/` contains reusable buttons, labels and animation helpers.
-- `lib/data.ts` centralises navigation, content, image references and placeholder story data.
+- `lib/data.ts` centralises navigation, the five ecosystem pillars, ecosystem flow, image references and placeholder story data.
 - `lib/animations.ts` registers GSAP and ScrollTrigger on the client only.
 
 ## Replacing Imagery
@@ -78,6 +78,8 @@ The source references are also listed in `imageCredits` inside `lib/data.ts`.
 Repeated content lives in `lib/data.ts`. Section-specific editorial copy lives in the matching component under `components/sections/`.
 
 If the official `Brand Manual (1).md` is added later, use it as the source of truth and revise the copy, logo usage, image direction and colour values accordingly.
+
+The ecosystem section is structured around the Ladies’ Space Ecosystem Map: Community, Learning & Development, Access, Wellbeing and Impact. Update `ecosystemPillars` and `ecosystemFlow` in `lib/data.ts` when the full framework or SOP details change.
 
 ## GSAP Animations
 

@@ -10,8 +10,8 @@ export function Footer() {
           <div>
             <Logo tone="dark" />
             <p className="mt-7 max-w-sm text-base leading-7 text-ivory/78">
-              A women-centred community ecosystem in The Gambia creating intentional
-              experiences, meaningful connections and pathways to opportunity.
+              A women-centred community ecosystem creating intentional experiences,
+              meaningful connections and pathways to opportunity.
             </p>
           </div>
           <nav aria-label="Footer navigation" className="grid gap-3 text-sm">

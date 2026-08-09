@@ -1,9 +1,7 @@
 import {
-  ArrowUpRight,
   BookOpen,
   BriefcaseBusiness,
   HandHeart,
-  MessageCircle,
   Sparkles,
   UsersRound
 } from "lucide-react";
@@ -14,7 +12,7 @@ export const siteConfig = {
   email: "hello@ladiesspace.gm",
   url: "https://ladiesspace.gm",
   description:
-    "Ladies’ Space is a women-centred community organisation in The Gambia creating intentional experiences, meaningful connections and pathways to growth, visibility and opportunity."
+    "Ladies’ Space is a women-centred community ecosystem creating intentional experiences, meaningful connections and pathways to opportunity."
 };
 
 export const navItems = [
@@ -53,52 +51,55 @@ export const ecosystemPillars = [
   {
     title: "Community",
     description:
-      "A welcoming network where women build meaningful relationships, feel seen and find support across different seasons of life.",
+      "A welcoming network where women build connections, feel seen and find support across different seasons of life.",
+    initiatives: ["Ladies’ Space Community", "Ladies’ Space Experiences"],
     image: "/images/unsplash-community-gathering.jpg",
     icon: UsersRound
-  },
-  {
-    title: "Experiences",
-    description:
-      "Intentional gatherings designed with care, purpose and warmth, from intimate conversations to larger community moments.",
-    image: "/images/unsplash-collaboration-table.jpg",
-    icon: Sparkles
   },
   {
     title: "Learning & Development",
     description:
       "Practical spaces for women to gain knowledge, strengthen confidence and develop skills that support personal and professional growth.",
+    initiatives: ["Expert Series", "Skill Exchange"],
     image: "/images/unsplash-learning-session.jpg",
     icon: BookOpen
   },
   {
-    title: "Expert Conversations",
+    title: "Access",
     description:
-      "Access to thoughtful voices, lived experience and specialist insight that help women make informed decisions and imagine wider possibilities.",
-    image: "/images/unsplash-leadership-conversation.jpg",
-    icon: MessageCircle
-  },
-  {
-    title: "Visibility",
-    description:
-      "Platforms that help women’s work, ideas, leadership and stories be recognised with dignity and intention.",
-    image: "/images/unsplash-community-portrait.jpg",
-    icon: ArrowUpRight
-  },
-  {
-    title: "Opportunities",
-    description:
-      "Curated pathways to grants, scholarships, roles, mentorship, collaborations and learning opportunities that expand access.",
+      "Pathways that expand access to opportunities, visibility, mentorship, collaboration and practical support.",
+    initiatives: [
+      "She Builds — currently hosted as a WhatsApp group",
+      "Ladies’ Space Spotlight"
+    ],
     image: "/images/unsplash-opportunity-leadership.jpg",
     icon: BriefcaseBusiness
   },
   {
-    title: "Community Impact",
+    title: "Wellbeing",
+    description:
+      "A growing pillar for women’s wellbeing, care and sustainable personal growth as the ecosystem evolves.",
+    initiatives: ["Wellbeing Initiative — future core initiative"],
+    image: "/images/unsplash-collaboration-table.jpg",
+    icon: Sparkles
+  },
+  {
+    title: "Impact",
     description:
       "Shared action that strengthens relationships, supports local needs and equips women to contribute meaningful change.",
+    initiatives: ["Ladies’ Space Give Back"],
     image: "/images/unsplash-community-hands.jpg",
     icon: HandHeart
   }
+];
+
+export const ecosystemFlow = [
+  "Women join Ladies’ Space",
+  "Build connections",
+  "Develop knowledge & skills",
+  "Gain access to opportunities",
+  "Prioritise wellbeing",
+  "Create meaningful impact"
 ];
 
 export const imageCredits = [

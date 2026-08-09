@@ -19,7 +19,7 @@ export function Experiences() {
             data-parallax="reverse"
           >
             From gatherings and workshops to leadership conversations, each experience
-            is designed to move beyond attendance and create connection, learning and
+            is designed to move beyond attendance and create connection, knowledge and
             confidence.
           </p>
         </div>

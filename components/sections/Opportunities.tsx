@@ -42,7 +42,7 @@ export function Opportunities() {
           <div>
             <SectionLabel>Opportunities</SectionLabel>
             <h2 className="display-heading mt-5 max-w-2xl text-[clamp(2.9rem,6vw,5.8rem)]">
-              Visibility opens doors. Access creates possibility.
+              Access creates possibility. Visibility opens doors.
             </h2>
             <p className="mt-7 max-w-lg text-lg leading-8 text-charcoal/75">
               This directory treatment is ready for real opportunities when they are
@@ -50,39 +50,11 @@ export function Opportunities() {
               offers.
             </p>
             <Button href="#" className="mt-8">
-              View Opportunities
+              Contact us for opportunities
             </Button>
           </div>
 
-          <div className="border border-burgundy/15 bg-[#fffaf5]">
-            <div className="flex items-center justify-between border-b border-burgundy/15 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
-                Future opportunity board
-              </p>
-              <p className="text-xs text-charcoal/60">Placeholder content</p>
-            </div>
-            {opportunities.map((item) => (
-              <article
-                key={item.title}
-                data-opportunity-row
-                className="group grid gap-3 border-b border-burgundy/12 p-5 last:border-b-0 md:grid-cols-[8rem_1fr_auto] md:items-start"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
-                  {item.category}
-                </p>
-                <div>
-                  <h3 className="font-display text-3xl font-semibold leading-none text-burgundy">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-charcoal/72">{item.description}</p>
-                </div>
-                <ArrowUpRight
-                  aria-hidden="true"
-                  className="h-5 w-5 text-burgundy transition duration-300 group-hover:translate-x-1"
-                />
-              </article>
-            ))}
-          </div>
+         
         </div>
       </div>
     </section>

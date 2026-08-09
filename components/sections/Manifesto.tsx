@@ -29,12 +29,11 @@ export function Manifesto() {
           <div className="mt-10 grid gap-8 text-lg leading-8 text-charcoal/78 md:grid-cols-2">
             <p>
               Ladies’ Space helps women build meaningful relationships, access
-              knowledge, gain visibility and pursue bigger possibilities with dignity
-              and care.
+              knowledge, and pursue opportunities with dignity and care.
             </p>
             <p>
               It is a growing ecosystem for connection, growth, learning and community
-              impact, shaped for women in The Gambia and connected African communities.
+              impact, shaped for women in The Gambia and beyond.
             </p>
           </div>
           <blockquote className="mt-14 border-l border-burgundy pl-6 font-display text-4xl font-medium leading-tight text-burgundy sm:text-5xl">

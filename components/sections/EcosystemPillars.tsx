@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useMemo, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
-import { ecosystemPillars } from "@/lib/data";
+import { ecosystemFlow, ecosystemPillars } from "@/lib/data";
 import { gsap, prefersReducedMotion, registerGsap } from "@/lib/animations";
 
 export function EcosystemPillars() {
@@ -51,13 +51,18 @@ export function EcosystemPillars() {
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionLabel>Our Ecosystem</SectionLabel>
             <h2 className="display-heading mt-5 max-w-xl text-[clamp(2.8rem,5.2vw,5rem)]">
-              Seven ways the community becomes a pathway.
+              Ladies’ Space Ecosystem Map.
             </h2>
             <p className="mt-6 max-w-md text-base leading-7 text-charcoal/75">
-              Each pillar supports the same purpose: helping women connect, grow,
-              gain visibility and access opportunities without losing the warmth of
-              community.
+              A strategic snapshot of how programmes, experiences and initiatives
+              work together through five impact pillars.
             </p>
+            <a
+              href="#ecosystem-flow"
+              className="link-underline mt-6 inline-flex text-sm font-semibold text-burgundy"
+            >
+              Please click the LS Ecosystem Map (V1) for details
+            </a>
             <div className="mt-10 hidden border border-burgundy/12 bg-blush-light p-3 lg:block">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
@@ -98,6 +103,16 @@ export function EcosystemPillars() {
                     <p className="mt-4 max-w-2xl text-base leading-7 text-charcoal/74">
                       {pillar.description}
                     </p>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {pillar.initiatives.map((initiative) => (
+                        <span
+                          key={initiative}
+                          className="border border-burgundy/18 bg-ivory px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-burgundy/85"
+                        >
+                          {initiative}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                   <div className="flex h-11 w-11 items-center justify-center border border-burgundy/20 text-burgundy transition group-hover:bg-blush-light">
                     <Icon aria-hidden="true" className="h-5 w-5" />
@@ -105,6 +120,65 @@ export function EcosystemPillars() {
                 </article>
               );
             })}
+          </div>
+        </div>
+
+        <div
+          id="ecosystem-flow"
+          className="mt-16 grid gap-8 border-y border-burgundy/18 py-10 lg:grid-cols-[0.84fr_1.16fr]"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
+              Purpose
+            </p>
+            <h3 className="mt-4 font-display text-4xl font-semibold leading-none text-burgundy sm:text-5xl">
+              Five impact pillars, one connected pathway.
+            </h3>
+            <p className="mt-6 max-w-xl text-base leading-7 text-charcoal/74">
+              The Ladies’ Space Ecosystem Map provides a high-level overview of how
+              the organisation creates value for women through its five impact pillars
+              and core initiatives.
+            </p>
+            <p className="mt-4 max-w-xl text-base leading-7 text-charcoal/74">
+              It serves as a strategic snapshot of the ecosystem, with detailed
+              descriptions, operational guidance and implementation processes held in
+              the Ladies’ Space Ecosystem Framework and Standard Operating Procedures.
+            </p>
+          </div>
+
+          <div className="grid gap-8">
+            <div className="border border-burgundy/14 bg-[#fffaf5] p-5 sm:p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
+                Mission
+              </p>
+              <p className="mt-4 font-display text-3xl font-semibold leading-tight text-burgundy sm:text-4xl">
+                To empower women through transformative experiences and intentional
+                initiatives that foster growth, strengthen connections, expand access
+                and inspire meaningful impact.
+              </p>
+            </div>
+
+            <ol className="grid gap-3 sm:grid-cols-2">
+              {ecosystemFlow.map((step, index) => (
+                <li
+                  key={step}
+                  className="flex min-h-20 items-center gap-4 border border-burgundy/14 bg-ivory px-4 py-3"
+                >
+                  <span className="font-display text-3xl font-semibold text-burgundy/50">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-sm font-semibold leading-5 text-charcoal/78">
+                    {step}
+                  </span>
+                </li>
+              ))}
+            </ol>
+
+            <p className="border-l border-burgundy pl-5 text-base leading-7 text-charcoal/74">
+              Every Ladies’ Space programme, experience, partnership, event and
+              initiative should intentionally contribute to one or more of the five
+              impact pillars.
+            </p>
           </div>
         </div>
       </div>
