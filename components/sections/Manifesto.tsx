@@ -24,7 +24,7 @@ export function Manifesto() {
             as="h2"
             className="display-heading max-w-4xl text-[clamp(2.95rem,6vw,5.9rem)]"
           >
-            Women flourish when access, support and community come together.
+            Women flourish when access, support and community come together
           </RevealText>
           <div className="mt-10 grid gap-8 text-lg leading-8 text-charcoal/78 md:grid-cols-2">
             <p>

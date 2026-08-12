@@ -38,10 +38,7 @@ export function Impact() {
               sizes="(min-width: 1024px) 45vw, 92vw"
               className="aspect-[5/6] border border-ivory/18 bg-burgundy"
             />
-            <p className="mt-5 max-w-lg text-sm leading-6 text-ivory/62">
-              Future impact data can be added here once verified outcomes, participant
-              feedback and visual documentation are available.
-            </p>
+           
           </div>
         </div>
       </div>

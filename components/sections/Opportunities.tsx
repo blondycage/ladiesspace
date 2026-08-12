@@ -42,12 +42,10 @@ export function Opportunities() {
           <div>
             <SectionLabel>Opportunities</SectionLabel>
             <h2 className="display-heading mt-5 max-w-2xl text-[clamp(2.9rem,6vw,5.8rem)]">
-              Access creates possibility. Visibility opens doors.
+              Access creates possibility, Visibility opens doors
             </h2>
             <p className="mt-7 max-w-lg text-lg leading-8 text-charcoal/75">
-              This directory treatment is ready for real opportunities when they are
-              supplied. Until then, it avoids presenting sample content as active
-              offers.
+             Get access to opportunities, visibility and mentorship
             </p>
             <Button href="#" className="mt-8">
               Contact us for opportunities

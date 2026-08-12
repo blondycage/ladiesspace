@@ -51,18 +51,13 @@ export function EcosystemPillars() {
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionLabel>Our Ecosystem</SectionLabel>
             <h2 className="display-heading mt-5 max-w-xl text-[clamp(2.8rem,5.2vw,5rem)]">
-              Ladies’ Space Ecosystem Map.
+              Ladies’ Space Ecosystem 
             </h2>
             <p className="mt-6 max-w-md text-base leading-7 text-charcoal/75">
               A strategic snapshot of how programmes, experiences and initiatives
               work together through five impact pillars.
             </p>
-            <a
-              href="#ecosystem-flow"
-              className="link-underline mt-6 inline-flex text-sm font-semibold text-burgundy"
-            >
-              Please click the LS Ecosystem Map (V1) for details
-            </a>
+           
             <div className="mt-10 hidden border border-burgundy/12 bg-blush-light p-3 lg:block">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
@@ -174,11 +169,7 @@ export function EcosystemPillars() {
               ))}
             </ol>
 
-            <p className="border-l border-burgundy pl-5 text-base leading-7 text-charcoal/74">
-              Every Ladies’ Space programme, experience, partnership, event and
-              initiative should intentionally contribute to one or more of the five
-              impact pillars.
-            </p>
+            
           </div>
         </div>
       </div>

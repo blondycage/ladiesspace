@@ -8,7 +8,7 @@ import { gsap, prefersReducedMotion, registerGsap } from "@/lib/animations";
 export function Hero() {
   const root = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const headlineLines = ["A space for women", "to connect, grow", "and flourish."];
+  const headlineLines = ["A space for women", "to connect, grow", "and flourish"];
 
   useEffect(() => {
     const video = videoRef.current;
