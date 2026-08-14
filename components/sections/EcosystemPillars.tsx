@@ -134,22 +134,45 @@ export function EcosystemPillars() {
               the organisation creates value for women through its five impact pillars
               and core initiatives.
             </p>
-            <p className="mt-4 max-w-xl text-base leading-7 text-charcoal/74">
-              It serves as a strategic snapshot of the ecosystem, with detailed
-              descriptions, operational guidance and implementation processes held in
-              the Ladies’ Space Ecosystem Framework and Standard Operating Procedures.
-            </p>
-          </div>
-
-          <div className="grid gap-8">
+            <div className="grid gap-8">
             <div className="border border-burgundy/14 bg-[#fffaf5] p-5 sm:p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
-                Mission
+               Our Mission
               </p>
               <p className="mt-4 font-display text-3xl font-semibold leading-tight text-burgundy sm:text-4xl">
                 To empower women through transformative experiences and intentional
                 initiatives that foster growth, strengthen connections, expand access
                 and inspire meaningful impact.
+              </p>
+            </div>
+
+            <ol className="grid gap-3 sm:grid-cols-2">
+              {ecosystemFlow.map((step, index) => (
+                <li
+                  key={step}
+                  className="flex min-h-20 items-center gap-4 border border-burgundy/14 bg-ivory px-4 py-3"
+                >
+                  <span className="font-display text-3xl font-semibold text-burgundy/50">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-sm font-semibold leading-5 text-charcoal/78">
+                    {step}
+                  </span>
+                </li>
+              ))}
+            </ol>
+
+            
+          </div>
+          </div>
+
+          <div className="grid gap-8">
+            <div className="border border-burgundy/14 bg-[#fffaf5] p-5 sm:p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
+               Our Vision
+              </p>
+              <p className="mt-4 font-display text-3xl font-semibold leading-tight text-burgundy sm:text-4xl">
+              To build a leading women-centred ecosystem that connects, elevates, and equips women to flourish personally and professionally, while driving meaningful change within their communities and beyond.
               </p>
             </div>
 

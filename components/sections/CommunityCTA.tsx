@@ -3,6 +3,7 @@
 import { FormEvent, useId, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { siteConfig } from "@/lib/data";
 
 type FormState = {
   firstName: string;
@@ -36,8 +37,13 @@ export function CommunityCTA() {
     setSubmitted(false);
 
     if (Object.keys(nextErrors).length === 0) {
+      const subject = encodeURIComponent("Join the Ladies' Space community");
+      const body = encodeURIComponent(
+        `First name: ${form.firstName.trim()}\nEmail: ${form.email.trim()}`
+      );
       setSubmitted(true);
       setForm({ firstName: "", email: "" });
+      window.location.href = `mailto:${siteConfig.email}?subject=${subject}&body=${body}`;
     }
   }
 
@@ -118,8 +124,8 @@ export function CommunityCTA() {
 
               {submitted ? (
                 <p role="status" className="text-sm leading-6 text-burgundy">
-                  Thank you. This mock form has recorded the interaction locally. Connect
-                  it to the final newsletter platform when available.
+                  Thank you. Your email app should open with your community request
+                  addressed to {siteConfig.email}.
                 </p>
               ) : null}
             </div>

@@ -9,7 +9,7 @@ import {
 export const siteConfig = {
   name: "Ladies’ Space",
   location: "The Gambia",
-  email: "partners@ladiesspace.site",
+  email: "hello@ladiesspace.site",
   url: "https://ladiesspace.site",
   description:
     "Ladies’ Space is a women-centred community ecosystem creating intentional experiences, meaningful connections and pathways to opportunity."
@@ -41,11 +41,39 @@ export const images = {
     src: "/images/community-hands.jpg",
     alt: "A group placing their hands together as a sign of shared community support"
   },
+  opportunities: {
+    src: "/images/community-hands.jpg",
+    alt: "Ladies' Space guests standing together at an event with branded gift bags"
+  },
   story: {
-    src: "/images/unsplash-community-portrait.jpg",
+    src: "/images/coom.jpeg",
     alt: "Portrait of a smiling woman in warm natural light"
   }
 };
+
+export const manifestoSlides = [
+  {
+    src: "/images/workshop.jpeg",
+    alt: "Women gathered around a table during a hands-on workshop"
+  },
+  {
+    src: "/images/rename.jpeg",
+    alt: "Ladies' Space community moment"
+  }
+];
+
+export const impactSlides = [
+  {
+    src: "/images/impact1.jpeg",
+    alt: "Ladies' Space representatives delivering maternity care supplies to hospital staff",
+    title: "Community contributions delivered"
+  },
+  {
+    src: "/images/impact2.jpeg",
+    alt: "Ladies' Space representatives presenting donated supplies to maternity care staff",
+    title: "Support for maternity care"
+  }
+];
 
 export const ecosystemPillars = [
   {
@@ -76,10 +104,10 @@ export const ecosystemPillars = [
     icon: BriefcaseBusiness
   },
   {
-    title: "Wellbeing",
+    title: "Wellness Initiative",
     description:
-      "A growing pillar for women’s wellbeing, care and sustainable personal growth as the ecosystem evolves.",
-    initiatives: ["Wellbeing Initiative — future core initiative"],
+      "Creating spaces, experiences, and opportunities that encourage women to prioritise their wellbeing, nurture themselves, and live healthier, more balanced lives.",
+    initiatives: ["Wellbeing Initiative "],
     image: "/images/pillars4.jpeg",
     icon: Sparkles
   },
@@ -162,34 +190,34 @@ export const experiences = [
 
 export const experienceSlides = [
   {
-    src: "/images/unsplash-women-gathering.jpg",
-    alt: "Women smiling and talking together outdoors",
-    title: "Gathering in warmth",
-    caption: "Spaces that feel easy to enter and meaningful to stay in."
+    src: "/images/slide1.jpeg",
+    alt: "Three women standing in front of a Ladies' Space event backdrop with gift bags",
+    title: "Arrivals with care",
+    caption: "Thoughtful welcome moments that make each guest feel expected and seen."
   },
   {
-    src: "/images/workshop.jpeg",
-    alt: "Women gathered around a table during a hands-on workshop",
-    title: "Learning in practice",
-    caption: "Sessions built for real exchange, reflection and growth."
+    src: "/images/slide2.jpg",
+    alt: "Four women smiling together while holding thank you gift boxes",
+    title: "Gifts of appreciation",
+    caption: "Small details that turn attendance into a personal, memorable experience."
   },
   {
-    src: "/images/CONVO.JPG",
-    alt: "Women in conversation during a community event",
-    title: "Conversations that matter",
-    caption: "Honest dialogue that makes room for visibility and connection."
+    src: "/images/slide3.png",
+    alt: "Women gathered around decorated tables at a Ladies' Space dinner event",
+    title: "Tables of connection",
+    caption: "Shared meals and open conversations that help community form naturally."
   },
   {
-    src: "/images/COMMUNITY.JPG",
-    alt: "A lively community gathering with women together",
-    title: "Community in motion",
-    caption: "Shared experiences that turn attendance into belonging."
+    src: "/images/slide4.jpeg",
+    alt: "Two women standing close together and looking at a phone during an event",
+    title: "Quiet moments too",
+    caption: "The experience leaves space for laughter, reflection and easy connection."
   },
   {
-    src: "/images/use.JPG",
-    alt: "Women sharing an engaged moment at an event",
-    title: "Intentional experiences",
-    caption: "Moments designed to leave people fuller than they arrived."
+    src: "/images/slide5.PNG",
+    alt: "Ladies' Space event guest holding a thank you gift box",
+    title: "A lasting feeling",
+    caption: "Women leave with reminders that they were valued in the room."
   }
 ];
 

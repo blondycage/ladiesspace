@@ -173,7 +173,7 @@ export function Hero() {
           data-hero-reveal
           className="mt-14 grid gap-4 border-t border-ivory/24 pt-5 text-xs font-semibold uppercase tracking-[0.16em] text-ivory/78 sm:grid-cols-4"
         >
-          {["Community", "Growth", "Visibility", "Opportunity"].map((label) => (
+          {["Community", "Growth", "Access", "Wellness","Impact"].map((label) => (
             <div key={label}>
               <span data-hero-line className="mb-3 block h-px w-full bg-blush-light/70" />
               {label}
