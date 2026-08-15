@@ -17,7 +17,7 @@ export const siteConfig = {
 
 export const navItems = [
   { label: "About", href: "#about" },
-  { label: "Our Ecosystem", href: "#ecosystem" },
+  { label: "We Stand For", href: "#ecosystem" },
   { label: "Experiences", href: "#experiences" },
   { label: "Opportunities", href: "#opportunities" },
   { label: "Impact", href: "#impact" },
@@ -104,10 +104,10 @@ export const ecosystemPillars = [
     icon: BriefcaseBusiness
   },
   {
-    title: "Wellness Initiative",
+    title: "Well-being ",
     description:
-      "Creating spaces, experiences, and opportunities that encourage women to prioritise their wellbeing, nurture themselves, and live healthier, more balanced lives.",
-    initiatives: ["Wellbeing Initiative "],
+      "Creating opportunities for women to prioritise their physical, emotional and social well-being",
+    initiatives: ["Well-being Initiative "],
     image: "/images/pillars4.jpeg",
     icon: Sparkles
   },

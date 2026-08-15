@@ -68,15 +68,7 @@ export function Opportunities() {
               className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(100,16,29,0.02)_0%,rgba(100,16,29,0.24)_100%)]" />
-            <div className="absolute bottom-0 left-0 right-0 border-t border-ivory/18 bg-burgundy-deep/78 px-5 py-4 text-ivory backdrop-blur-sm sm:px-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blush-light/80">
-                Ladies’ Space network
-              </p>
-              <p className="mt-2 max-w-lg text-base leading-7 text-ivory/86">
-                Creating visibility, connection and access through women-centred
-                community experiences.
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>

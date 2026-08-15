@@ -20,9 +20,7 @@ export function Partnership() {
             </div>
           </div>
           <div data-parallax="reverse">
-            <h2 className="display-heading max-w-4xl text-[clamp(2.9rem,6vw,5.6rem)]">
-              Build meaningful impact with us.
-            </h2>
+           
             <p className="mt-7 max-w-2xl text-lg leading-8 text-charcoal/75">
               We collaborate with organisations and individuals who share our
               commitment to women’s growth, wellbeing, access and community impact.

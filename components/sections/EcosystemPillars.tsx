@@ -49,14 +49,11 @@ export function EcosystemPillars() {
       <div className="container-page">
         <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <SectionLabel>Our Ecosystem</SectionLabel>
+            <SectionLabel>We Stand For</SectionLabel>
             <h2 className="display-heading mt-5 max-w-xl text-[clamp(2.8rem,5.2vw,5rem)]">
-              Ladies’ Space Ecosystem 
+              Ladies’ Space 
             </h2>
-            <p className="mt-6 max-w-md text-base leading-7 text-charcoal/75">
-              A strategic snapshot of how programmes, experiences and initiatives
-              work together through five impact pillars.
-            </p>
+           
            
             <div className="mt-10 hidden border border-burgundy/12 bg-blush-light p-3 lg:block">
               <div className="relative aspect-[4/5] overflow-hidden">
@@ -70,12 +67,7 @@ export function EcosystemPillars() {
                   className="object-cover transition duration-500"
                 />
               </div>
-              <div className="mt-4 flex items-center justify-between border-t border-burgundy/12 pt-4">
-                <span className="font-display text-5xl text-burgundy">{label}</span>
-                <span className="max-w-[10rem] text-right text-xs font-semibold uppercase tracking-[0.16em] text-charcoal/70">
-                  Active pillar
-                </span>
-              </div>
+              
             </div>
           </div>
 
@@ -123,44 +115,20 @@ export function EcosystemPillars() {
           className="mt-16 grid gap-8 border-y border-burgundy/18 py-10 lg:grid-cols-[0.84fr_1.16fr]"
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
-              Purpose
-            </p>
-            <h3 className="mt-4 font-display text-4xl font-semibold leading-none text-burgundy sm:text-5xl">
-              Five impact pillars, one connected pathway.
-            </h3>
-            <p className="mt-6 max-w-xl text-base leading-7 text-charcoal/74">
-              The Ladies’ Space Ecosystem Map provides a high-level overview of how
-              the organisation creates value for women through its five impact pillars
-              and core initiatives.
-            </p>
+           
             <div className="grid gap-8">
             <div className="border border-burgundy/14 bg-[#fffaf5] p-5 sm:p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
                Our Mission
               </p>
-              <p className="mt-4 font-display text-3xl font-semibold leading-tight text-burgundy sm:text-4xl">
+              <p className="mt-4 font-display text-md  leading-tight  sm:text-4xl">
                 To empower women through transformative experiences and intentional
                 initiatives that foster growth, strengthen connections, expand access
                 and inspire meaningful impact.
               </p>
             </div>
 
-            <ol className="grid gap-3 sm:grid-cols-2">
-              {ecosystemFlow.map((step, index) => (
-                <li
-                  key={step}
-                  className="flex min-h-20 items-center gap-4 border border-burgundy/14 bg-ivory px-4 py-3"
-                >
-                  <span className="font-display text-3xl font-semibold text-burgundy/50">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-sm font-semibold leading-5 text-charcoal/78">
-                    {step}
-                  </span>
-                </li>
-              ))}
-            </ol>
+            
 
             
           </div>
@@ -171,7 +139,7 @@ export function EcosystemPillars() {
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-burgundy">
                Our Vision
               </p>
-              <p className="mt-4 font-display text-3xl font-semibold leading-tight text-burgundy sm:text-4xl">
+              <p className="mt-4 font-display text-md leading-tight  sm:text-4xl">
               To build a leading women-centred ecosystem that connects, elevates, and equips women to flourish personally and professionally, while driving meaningful change within their communities and beyond.
               </p>
             </div>
