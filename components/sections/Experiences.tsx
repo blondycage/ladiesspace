@@ -40,8 +40,7 @@ export function Experiences() {
                 Experience mix
               </p>
               <p className="mt-4 max-w-md text-base leading-7 text-charcoal/75">
-                We ensure each gathering balances connection, learning and ease so people can
-                arrive, settle in and leave inspired.
+              We create experiences where women learn from one another, connect through life’s journeys, enjoy each other’s company, grow together, and leave inspired to make an impact.
               </p>
             </div>
 

@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <Logo tone="dark" />
             <p className="mt-7 max-w-sm text-base leading-7 text-ivory/78">
-              A women-centred community ecosystem creating intentional experiences,
+              A women-centred organisation creating intentional experiences,
               meaningful connections and pathways to opportunity.
             </p>
           </div>

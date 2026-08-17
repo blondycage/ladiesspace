@@ -27,11 +27,11 @@ export function Impact() {
             <h2 className="mt-5 font-display text-[clamp(3rem,6vw,5.8rem)] font-semibold leading-[0.92] text-ivory">
               Impact beyond the event.
             </h2>
+            <p className="mt-7 max-w-xl text-lg leading-8 text-ivory/78">Giving back is at the heart of Ladies’ Space.</p>
             <p className="mt-7 max-w-xl text-lg leading-8 text-ivory/78">
-              At our Women Brunch, 30% of event proceeds, together with community
-              contributions, were dedicated to supporting women receiving maternity
-              care at the hospital.
+            At the 1st edition of our Women’s Brunch, 30% of event proceeds, alongside contributions from our community, supported women receiving maternity care at Bundung Maternity and Child Health Hospital.
             </p>
+            <p className="mt-7 max-w-xl text-lg leading-8 text-ivory/78">This reflects our ongoing commitment to creating meaningful impact for women and our wider community.</p>
             <p className="mt-7 max-w-xl text-lg leading-8 text-ivory/78">
               When women come together, the impact can go further.
             </p>

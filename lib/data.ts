@@ -193,7 +193,7 @@ export const experienceSlides = [
     src: "/images/slide1.jpeg",
     alt: "Three women standing in front of a Ladies' Space event backdrop with gift bags",
     title: "Arrivals with care",
-    caption: "Thoughtful welcome moments that make each guest feel expected and seen."
+    caption: "Thoughtful welcome moments that make each guest feel appreciated and seen."
   },
   {
     src: "/images/slide2.jpg",
@@ -245,12 +245,13 @@ export const opportunities = [
 ];
 
 export const impactAreas = [
-  "Participant stories",
-  "Programme outcomes",
-  "Community initiatives",
-  "Feedback and testimonials",
-  "Values-aligned partnerships",
-  "Visual documentation"
+  "Women Supporting Women",   
+"Strengthening Community",
+"Bridging Gaps",
+"Collaboration Over Competition",
+"Creating Lasting Value",
+"Empowered Women Empower Women",
+"Impact That Lasts"
 ];
 
 export const communityTestimonials = [
@@ -292,7 +293,7 @@ export const communityTestimonials = [
 ];
 
 export const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com/" },
+  { label: "Instagram", href: "https://www.instagram.com/ladies_space___/?hl=en" },
   { label: "LinkedIn", href: "https://linkedin.com/" },
   { label: "Email", href: `mailto:${siteConfig.email}` }
 ];

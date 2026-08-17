@@ -130,7 +130,7 @@ export function Hero() {
             data-hero-reveal
             className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-blush-light"
           >
-            Women-centred community ecosystem
+            Women-centred organisation
           </p>
           <h1
             className="font-display text-[clamp(3.35rem,8vw,6.85rem)] font-semibold leading-[0.9] text-ivory"
@@ -164,7 +164,7 @@ export function Hero() {
               Join the Community
             </Button>
             <Button href="#ecosystem" variant="lightOutline">
-              Explore Our Ecosystem
+              Explore Our Organisation
             </Button>
           </div>
         </div>

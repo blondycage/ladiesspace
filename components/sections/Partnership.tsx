@@ -21,11 +21,10 @@ export function Partnership() {
           </div>
           <div data-parallax="reverse">
            
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-charcoal/75">
-              We collaborate with organisations and individuals who share our
-              commitment to women’s growth, wellbeing, access and community impact.
-            </p>
-            <div className="mt-9 flex flex-col gap-4 border-t border-burgundy/20 pt-7 sm:flex-row sm:items-center sm:justify-between">
+            <h2 className="mt-7 max-w-2xl text-lg leading-8 text-burgundy/75">
+            Access To Opportunities
+            </h2>
+            <div className="mt-9 flex flex-col gap-4  pt-7 sm:flex-row sm:items-center sm:justify-between">
                 
               <Button href="mailto:partnerships@ladiesspace.site?subject=Partnership%20with%20Ladies'%20Space">
                 Build with us
