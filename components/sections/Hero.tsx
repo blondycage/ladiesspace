@@ -156,7 +156,7 @@ export function Hero() {
             data-hero-reveal
             className="mt-7 max-w-2xl text-lg leading-8 text-ivory/82 sm:text-xl"
           >
-            Ladies’ Space is a women-centred community ecosystem creating intentional
+            Ladies’ Space is a women-centred organisation creating intentional
             experiences, meaningful connections and pathways to opportunity.
           </p>
           <div data-hero-reveal className="mt-9 flex flex-col gap-3 sm:flex-row">

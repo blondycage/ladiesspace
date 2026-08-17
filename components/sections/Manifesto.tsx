@@ -69,7 +69,7 @@ export function Manifesto() {
               knowledge, and pursue opportunities with dignity and care.
             </p>
             <p>
-              It is a growing ecosystem for connection, growth, learning and community
+              It is a growing organisation for connection, growth, learning and community
               impact, shaped for women in The Gambia and beyond.
             </p>
           </div>

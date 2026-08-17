@@ -12,7 +12,7 @@ export const siteConfig = {
   email: "hello@ladiesspace.site",
   url: "https://ladiesspace.site",
   description:
-    "Ladies’ Space is a women-centred community ecosystem creating intentional experiences, meaningful connections and pathways to opportunity."
+    "Ladies’ Space is a women-centred organisation creating intentional experiences, meaningful connections and pathways to opportunity."
 };
 
 export const navItems = [
