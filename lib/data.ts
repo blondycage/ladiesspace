@@ -17,7 +17,7 @@ export const siteConfig = {
 
 export const navItems = [
   { label: "About", href: "#about" },
-  { label: "We Stand For", href: "#ecosystem" },
+  { label: "What We Stand For", href: "#ecosystem" },
   { label: "Experiences", href: "#experiences" },
   { label: "Opportunities", href: "#opportunities" },
   { label: "Impact", href: "#impact" },
@@ -258,7 +258,7 @@ export const communityTestimonials = [
   {
     name: "Yam",
     quote:
-      "Dear Aji, I don't even know where to begin. Usually I get so busy taking care of the people around me that I even forget how to have fun. I pour so much into people's cups and never get refilled. Today was a day filled with fun and laughter. I never knew I could be this happy. For a moment I forgot all my worries and focused just on having a good time. You kept mentioning how grateful you're for my presence, but you don't even know what you did means to me. I just want to say thank you. I'm fully behind you. I'll give my all to this in sha Allah to see it grow. Love, from Yam.",
+      "Dear ladies, I don't even know where to begin. Usually I get so busy taking care of the people around me that I even forget how to have fun. I pour so much into people's cups and never get refilled. Today was a day filled with fun and laughter. I never knew I could be this happy. For a moment I forgot all my worries and focused just on having a good time. You kept mentioning how grateful you're for my presence, but you don't even know what you did means to me. I just want to say thank you. I'm fully behind you. I'll give my all to this in sha Allah to see it grow. Love, from Yam.",
     accent: "Heartfelt gratitude"
   },
   {
@@ -281,7 +281,7 @@ export const communityTestimonials = [
   {
     name: "Letitia G.",
     quote:
-      "I really love the hospitality. Everyone is friendly and we definitely need more people like this in our societies at large. Thank you, Ajie. Bless your heart.",
+      "I really love the hospitality. Everyone is friendly and we definitely need more people like this in our societies at large. Thank you. Bless your heart.",
     accent: "Hospitality"
   },
   {
