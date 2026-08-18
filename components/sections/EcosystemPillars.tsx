@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ecosystemFlow, ecosystemPillars } from "@/lib/data";
@@ -33,9 +33,7 @@ export function EcosystemPillars() {
             scrollTrigger: {
               trigger: row,
               start: "top center",
-              end: "bottom center",
-              onEnter: () => setActiveIndex(index),
-              onEnterBack: () => setActiveIndex(index)
+              end: "bottom center"
             }
           }
         );
@@ -44,30 +42,55 @@ export function EcosystemPillars() {
     { scope: root }
   );
 
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % ecosystemPillars.length);
+    }, 5200);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
     <section id="ecosystem" ref={root} className="section-pad">
       <div className="container-page">
         <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <SectionLabel>We Stand For</SectionLabel>
+            <SectionLabel>What We Stand For</SectionLabel>
             <h2 className="display-heading mt-5 max-w-xl text-[clamp(2.8rem,5.2vw,5rem)]">
               Ladies’ Space 
             </h2>
            
            
-            <div className="mt-10 hidden border border-burgundy/12 bg-blush-light p-3 lg:block">
-              <div className="relative aspect-[4/5] overflow-hidden">
+            <div className="mt-8 border border-burgundy/12 bg-blush-light p-3 sm:mt-10">
+              <div className="relative aspect-[16/11] overflow-hidden sm:aspect-[4/5]">
                 <Image
-                  key={activePillar.image}
+                  key={`${activePillar.title}-${activePillar.image}`}
                   src={activePillar.image}
                   alt={`Photography representing ${activePillar.title.toLowerCase()} within the Ladies’ Space ecosystem`}
                   fill
-                  sizes="34vw"
+                  sizes="(min-width: 1024px) 34vw, 92vw"
                   loading="eager"
                   className="object-cover transition duration-500"
                 />
+                
               </div>
-              
+
+              <div className="mt-3 flex flex-wrap gap-2">
+                {ecosystemPillars.map((pillar, index) => (
+                  <button
+                    key={`${pillar.title}-${pillar.image}`}
+                    type="button"
+                    onClick={() => setActiveIndex(index)}
+                    className={`h-2.5 flex-1 basis-8 border transition duration-300 sm:w-10 sm:flex-none ${
+                      index === activeIndex
+                        ? "border-burgundy bg-burgundy"
+                        : "border-burgundy/20 bg-ivory hover:bg-burgundy/10"
+                    }`}
+                    aria-label={`Show ecosystem image ${index + 1}`}
+                    aria-pressed={index === activeIndex}
+                  />
+                ))}
+              </div>
             </div>
           </div>
 

@@ -65,7 +65,7 @@ export function Experiences() {
 
           <div className="grid gap-4" data-parallax="reverse">
             <div className="relative isolate overflow-hidden border border-burgundy/14 bg-charcoal shadow-[0_22px_56px_rgba(63,17,24,0.14)]">
-              <div className="relative aspect-[4/5] min-h-[28rem]">
+              <div className="relative aspect-[4/5] min-h-[20rem] sm:min-h-[28rem]">
                 <Image
                   src={currentSlide.src}
                   alt={currentSlide.alt}
@@ -76,7 +76,7 @@ export function Experiences() {
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(63,17,24,0.05)_0%,rgba(63,17,24,0.28)_54%,rgba(63,17,24,0.86)_100%)]" />
 
-                <div className="absolute left-0 top-0 flex w-full items-start justify-between gap-4 p-4 sm:p-5">
+                <div className="absolute left-0 top-0 flex w-full flex-wrap items-start justify-between gap-3 p-3 sm:gap-4 sm:p-5">
                   <div className="rounded-none border border-ivory/18 bg-charcoal/35 px-3 py-2 backdrop-blur-sm">
                     <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blush-light/78">
                       Slideshow
@@ -111,12 +111,12 @@ export function Experiences() {
                   </div>
                 </div>
 
-                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
                   <div className="max-w-xl">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-blush-light/75">
                       {currentSlide.title}
                     </p>
-                    <p className="mt-3 max-w-lg text-lg leading-8 text-ivory/90 sm:text-xl">
+                    <p className="mt-2 max-w-lg text-base leading-7 text-ivory/90 sm:mt-3 sm:text-xl sm:leading-8">
                       {currentSlide.caption}
                     </p>
                   </div>
@@ -130,7 +130,7 @@ export function Experiences() {
                   key={slide.src}
                   type="button"
                   onClick={() => setActiveSlide(index)}
-                  className={`h-2.5 w-10 border transition duration-300 ${
+                  className={`h-2.5 flex-1 basis-8 border transition duration-300 sm:w-10 sm:flex-none ${
                     index === activeSlide
                       ? "border-burgundy bg-burgundy"
                       : "border-burgundy/20 bg-ivory hover:bg-burgundy/10"

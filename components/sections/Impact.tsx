@@ -49,7 +49,7 @@ export function Impact() {
 
           <div className="grid gap-4" data-parallax="soft">
             <div className="relative overflow-hidden border border-ivory/18 bg-burgundy shadow-[0_22px_56px_rgba(0,0,0,0.16)]">
-              <div className="relative aspect-[5/6] min-h-[28rem]">
+              <div className="relative aspect-[5/6] min-h-[20rem] sm:min-h-[28rem]">
                 <Image
                   src={currentSlide.src}
                   alt={currentSlide.alt}
@@ -59,7 +59,7 @@ export function Impact() {
                   priority={activeSlide === 0}
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(100,16,29,0.02)_0%,rgba(100,16,29,0.38)_100%)]" />
-                <div className="absolute bottom-0 left-0 right-0 border-t border-ivory/16 bg-burgundy-deep/74 px-5 py-4 backdrop-blur-sm sm:px-6">
+                <div className="absolute bottom-0 left-0 right-0 border-t border-ivory/16 bg-burgundy-deep/74 px-4 py-4 backdrop-blur-sm sm:px-6">
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blush-light/80">
                     Ladies’ Space Give Back
                   </p>
@@ -70,13 +70,13 @@ export function Impact() {
               </div>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {impactSlides.map((slide, index) => (
                 <button
                   key={slide.src}
                   type="button"
                   onClick={() => setActiveSlide(index)}
-                  className={`h-2.5 w-12 border transition duration-300 ${
+                  className={`h-2.5 flex-1 basis-10 border transition duration-300 sm:w-12 sm:flex-none ${
                     index === activeSlide
                       ? "border-blush-light bg-blush-light"
                       : "border-ivory/24 bg-ivory/10 hover:bg-ivory/22"
